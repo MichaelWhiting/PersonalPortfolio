@@ -2,10 +2,28 @@ import React from 'react'
 
 // CSS
 import "../css/Home.css";
+import LanguageCard from '../components/LanguageCard';
+
+import SwiftIcon from "../../public/Swift.png";
+import ReactIcon from "../../public/React.png";
+import JSIcon from "../../public/JavaScript.png";
+import HTMLIcon from "../../public/HTML.png";
+import CSSIcon from "../../public/CSS.png";
+import LuaIcon from "../../public/Lua.png";
 
 function Home() {
+    const languages = [
+        { imageUrl: SwiftIcon, language: "Swift" },
+        { imageUrl: ReactIcon, language: "ReactJS" },
+        { imageUrl: JSIcon, language: "Javascript" },
+        { imageUrl: HTMLIcon, language: "HTML" },
+        { imageUrl: CSSIcon, language: "CSS" },
+        { imageUrl: LuaIcon, language: "Lua" },
+    ];
 
-
+    const languageCards = languages.map((language) => {
+        return <LanguageCard imageUrl={language.imageUrl} language={language.language}/>
+    })
 
     return (
         <div className='outer-div fade-in'>
@@ -21,10 +39,10 @@ function Home() {
                     </label>
                 </div>
             </div>
-            <div className='languages-div'>
+            <div className=''>
                 <h3>Languages I know:</h3>
-                <div>
-
+                <div className='languages-div'>
+                    {languageCards}
                 </div>
             </div>
         </div>
