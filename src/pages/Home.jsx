@@ -1,4 +1,5 @@
 import React from 'react'
+import Carousel from '../components/Carousel.jsx';
 
 // CSS
 import "../css/Home.css";
@@ -39,11 +40,13 @@ function Home() {
                     </label>
                 </div>
             </div>
-            <div className=''>
+            <div className='knowledge-div'>
                 <h3>Languages I know:</h3>
                 <div className='languages-div'>
                     {languageCards}
                 </div>
+                <h3>Certificates & Letters of Recommendation</h3>
+                <Carousel></Carousel>
             </div>
         </div>
     )

@@ -1,3 +1,8 @@
+h3 {
+    text-align: center;
+    padding-top: 30px;
+}
+
 .name-label {
     font-size: 40px;
 }
@@ -23,8 +28,15 @@
 }
 
 .languages-div {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.knowledge-div {
+    width: 80%;
+    margin: auto;
 }
