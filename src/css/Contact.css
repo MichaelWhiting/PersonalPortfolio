@@ -1,0 +1,106 @@
+form {
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px;
+}
+
+h4 {
+    transition: transform 0.2s;
+}
+
+h4:hover {
+    transform: scale(1.01);
+}
+
+.contact-info {
+    background-color: #008877;
+    border-radius: 8px;
+    font-size: 20px;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.form-container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    background-color: #008877;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form-item {
+    width: 100%;
+    margin: 10px;
+}
+
+.form-label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.form-input {
+    background-color: #005E4F;
+    border: 0px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+.form-input:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-textarea {
+    background-color: #005E4F;
+    border: 0px solid white;
+    border-radius: 10px;
+    color: white;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    height: 25vh;
+    transition: transform 0.2s;
+}
+
+.form-textarea:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.submit-btn {
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    background-color: #00B4A1;
+    border: 0px solid white;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    background-color: #00E2CD;
+}
+
+.outer-div {
+    padding-bottom: 100px;
+}

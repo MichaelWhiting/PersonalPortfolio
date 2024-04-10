@@ -1,0 +1,23 @@
+.name-label {
+    font-size: 40px;
+}
+
+.header-div {
+    background-color: #008877;
+    border-radius: 8px;
+    font-size: 20px;
+    height: auto;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.profile-image {
+    background-color: rgb(166, 166, 166);
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    margin: 10px;
+}
