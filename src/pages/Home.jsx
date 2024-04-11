@@ -1,16 +1,20 @@
 import React from 'react'
-import Carousel from '../components/Carousel.jsx';
 
 // CSS
 import "../css/Home.css";
 import LanguageCard from '../components/LanguageCard';
 
+// Images
 import SwiftIcon from "../../public/Swift.png";
 import ReactIcon from "../../public/React.png";
 import JSIcon from "../../public/JavaScript.png";
 import HTMLIcon from "../../public/HTML.png";
 import CSSIcon from "../../public/CSS.png";
 import LuaIcon from "../../public/Lua.png";
+
+// PDFs
+import recommendation1 from "../../public/MTechRecommendationLetter.pdf"
+
 
 function Home() {
     const languages = [
@@ -22,8 +26,8 @@ function Home() {
         { imageUrl: LuaIcon, language: "Lua" },
     ];
 
-    const languageCards = languages.map((language) => {
-        return <LanguageCard imageUrl={language.imageUrl} language={language.language}/>
+    const languageCards = languages.map((language, i) => {
+        return <LanguageCard key={i} imageUrl={language.imageUrl} language={language.language}/>
     })
 
     return (
@@ -46,7 +50,12 @@ function Home() {
                     {languageCards}
                 </div>
                 <h3>Certificates & Letters of Recommendation</h3>
-                <Carousel></Carousel>
+                <iframe
+                    src={recommendation1}
+                    width="100%"
+                    height="600px"
+                    style={{border: 'none'}}>
+                </iframe>
             </div>
         </div>
     )

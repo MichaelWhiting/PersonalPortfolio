@@ -1,0 +1,40 @@
+.header-div {
+    background-color: #008877;
+    border-radius: 8px;
+    font-size: 20px;
+    height: auto;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+.name-label {
+    font-size: 40px;
+}
+
+.projects-div {
+    background-color: #008877;
+    border-radius: 8px;
+    font-size: 20px;
+    height: auto;
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.project-div {
+    background-color: #01695c;
+    border-radius: 8px;
+    font-size: 20px;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    overflow: hidden;
+    display: flex;
+}
