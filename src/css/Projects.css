@@ -34,7 +34,71 @@
     width: 95%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 20px;
     overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.project-div:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description-label {
+    width: 55%;
+    margin: 10px;
+}
+
+.desc-vid-div {
     display: flex;
+}
+
+.gh-link {
+    width: 10%;
+    height: 40px;
+    margin: 5px;
+    background-color: #00B4A1;
+    border: 0px solid white;
+    border-radius: 10px;
+    color: white;
+    transition: transform 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.title-div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.gh-icon {
+    margin: 5px;
+}
+
+.gh-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    background: #00E2CD;
+}
+
+h1 {
+    width: 87%;
+}
+
+.video-div {
+    width: 40%;
+    height: 300px;
+    background-color: gray;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.video-div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

@@ -40,3 +40,9 @@ h3 {
     width: 80%;
     margin: auto;
 }
+
+.recommend-letter {
+    width: 100%;
+    height: 600px;
+    border: none;
+}

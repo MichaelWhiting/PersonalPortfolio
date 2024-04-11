@@ -50,12 +50,7 @@ function Home() {
                     {languageCards}
                 </div>
                 <h3>Certificates & Letters of Recommendation</h3>
-                <iframe
-                    src={recommendation1}
-                    width="100%"
-                    height="600px"
-                    style={{border: 'none'}}>
-                </iframe>
+                <iframe src={recommendation1} className="recommend-letter"></iframe>
             </div>
         </div>
     )
