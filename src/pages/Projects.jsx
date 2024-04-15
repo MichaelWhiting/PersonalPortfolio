@@ -28,7 +28,7 @@ function Projects() {
 
   return (
     <div className="outer-div fade-in">
-      <div className="header-div">
+      <div className="my-header-div">
         <div>
           <h1 className="name-label">Projects</h1>
           <label>

@@ -1,4 +1,4 @@
-.header-div {
+.my-header-div {
     background-color: #008877;
     border-radius: 8px;
     font-size: 20px;
@@ -21,7 +21,7 @@
     height: auto;
     width: 85%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 20px;
     overflow: hidden;
 }
@@ -101,4 +101,45 @@ h1 {
 .video-div:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gh-link {
+    font-size: 17px;
+    overflow: hidden;
+}
+
+@media (max-width: 650px) {
+    .my-header-div {
+        width: 95%;
+    }
+
+    .projects-div {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .project-div {
+        width: 100%;
+    }
+
+    .gh-link {
+        width: 33%;
+    }
+
+    .video-div {
+        width: 95%;
+        height: 200px;
+        margin: auto;
+        margin: 10px;
+    }
+
+    .desc-vid-div {
+        display: block;
+    }
+
+    .description-label {
+        width: 100%;
+        margin: 10px;
+        font-size: 12px;
+    }
 }

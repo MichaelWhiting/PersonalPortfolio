@@ -16,10 +16,10 @@ function ProjectCard({ project }) {
         </a>
       </div>
       <div className="desc-vid-div">
-        <label className="description-label">{description}</label>
         <div className="video-div">
 
         </div>
+        <label className="description-label">{description}</label>
       </div>
     </div>
   )
