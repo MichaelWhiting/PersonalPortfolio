@@ -27,14 +27,14 @@ function Contact() {
     return (
         <div className='outer-div fade-in'>
             <div className="contact-info">
-                <h1>Contact Infomation</h1>
+                <h1>Contact Infomation:</h1>
                 <h4>Phone #: 801-310-6246</h4>
                 <h4>Email: michaelbwhiting2004@gmail.com</h4>
             </div>
             <br />
             <div className="form-container">
                 <form className="form" ref={form} onSubmit={sendEmail}>
-                    <h1>Send a message:</h1>
+                    <h1 className="send-message-label">Send a message:</h1>
 
                     <div className="form-item">
                         <label className="form-label">Your Email:</label>

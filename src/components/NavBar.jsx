@@ -8,7 +8,7 @@ import "../css/App.css";
 
 function NavBar() {
   return (
-    <Navbar expand='md' data-bs-theme="dark">
+    <Navbar expand='md m-3' data-bs-theme="dark">
         <div className="brand-container">
             <Icon.Person className="person-icon"/>
             <label className="site-name">Portfolio</label>
@@ -16,9 +16,9 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
             <Nav className="ms-auto me-3">
-                <NavLink to="/" className="nav-link">Home</NavLink>
-                <NavLink to="/projects" className="nav-link">Projects</NavLink>
-                <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                <NavLink to="/" className="nav-link ms-2">Home</NavLink>
+                <NavLink to="/projects" className="nav-link ms-2">Projects</NavLink>
+                <NavLink to="/contact" className="nav-link ms-2">Contact</NavLink>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
