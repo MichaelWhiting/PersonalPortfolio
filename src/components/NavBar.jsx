@@ -1,4 +1,4 @@
-import { Navbar, Nav, NavbarCollapse } from "react-bootstrap";
+import { Navbar, Nav, NavbarCollapse, NavbarBrand } from "react-bootstrap";
 import * as Icon from "react-bootstrap-icons";
 import { NavLink } from "react-router-dom";
 
@@ -9,10 +9,14 @@ import "../css/App.css";
 function NavBar() {
   return (
     <Navbar className="me-2" expand='md' data-bs-theme="dark">
-        <div className="brand-container">
-            <Icon.Person className="person-icon"/>
-            <label className="site-name">Portfolio</label>
-        </div>
+        <Navbar.Brand>
+          <NavLink to="/" className="nav-link w-100">
+            <div className="brand-container">
+                <Icon.Person className="person-icon"/>
+                <label className="site-name">Portfolio</label>
+            </div>
+          </NavLink>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse>
             <Nav className="ms-auto me-3">
