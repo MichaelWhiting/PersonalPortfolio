@@ -28,8 +28,8 @@ function Contact() {
         <div className='outer-div fade-in'>
             <div className="contact-info">
                 <h1>Contact Infomation:</h1>
-                <h4>Phone #: 801-310-6246</h4>
-                <h4>Email: michaelbwhiting2004@gmail.com</h4>
+                <label className="contact-item">Phone #: 801-310-6246</label>
+                <label className="contact-item">Email: michaelbwhiting2004@gmail.com</label>
             </div>
             <br />
             <div className="form-container">
