@@ -8,7 +8,7 @@ import "../css/App.css";
 
 function NavBar() {
   return (
-    <Navbar expand='md m-3' data-bs-theme="dark">
+    <Navbar className="me-2" expand='md' data-bs-theme="dark">
         <div className="brand-container">
             <Icon.Person className="person-icon"/>
             <label className="site-name">Portfolio</label>

@@ -20,7 +20,7 @@ function Home() {
     const languages = [
         { imageUrl: SwiftIcon, language: "Swift" },
         { imageUrl: ReactIcon, language: "ReactJS" },
-        { imageUrl: JSIcon, language: "Javascript" },
+        { imageUrl: JSIcon, language: "JavaScript" },
         { imageUrl: HTMLIcon, language: "HTML" },
         { imageUrl: CSSIcon, language: "CSS" },
         { imageUrl: LuaIcon, language: "Lua" },
@@ -32,13 +32,13 @@ function Home() {
 
     return (
         <div className='outer-div fade-in'>
-            <div className="header-div">
+            <div className="my-header-div">
                 <div className='profile-image'>
-                    <div style={{background: 'gray', width: "100%", height: "100%"}}></div>
+                    <div className="image-style"></div>
                 </div>
                 <div>
-                    <h1 className="name-label">Michael Whiting</h1>
-                    <label>
+                    <label className="my-name-label">Michael Whiting</label>
+                    <label className="self-desc-label">
                         This is my personal portfolio website that shows off 
                         my skills and some of my projects which I have worked on.
                     </label>
@@ -49,8 +49,11 @@ function Home() {
                 <div className='languages-div'>
                     {languageCards}
                 </div>
-                <h3>Certificates & Letters of Recommendation</h3>
-                <iframe src={recommendation1} className="recommend-letter"></iframe>
+                <div className="awards">
+                    <h3>Certificates & Letters of Recommendation</h3>
+                    <br/>
+                    <iframe src={recommendation1} className="recommend-letter"></iframe>
+                </div>
             </div>
         </div>
     )

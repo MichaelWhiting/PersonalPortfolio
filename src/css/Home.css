@@ -1,16 +1,25 @@
 h3 {
+    width: 100%;
     text-align: center;
     padding-top: 30px;
 }
 
-.name-label {
+.my-name-label {
     font-size: 40px;
+    font-weight: 500;
 }
 
-.header-div {
+.image-style {
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.my-header-div {
     background-color: #008877;
     border-radius: 8px;
-    font-size: 20px;
     height: auto;
     width: 85%;
     margin: auto;
@@ -20,11 +29,11 @@ h3 {
 }
 
 .profile-image {
-    background-color: rgb(180, 179, 179);
-    width: 100px;
-    height: 100px;
-    border-radius: 25px;
-    margin: 10px;
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .languages-div {
@@ -42,7 +51,77 @@ h3 {
 }
 
 .recommend-letter {
+    display: block;
     width: 100%;
     height: 600px;
     border: none;
+}
+
+.awards {
+    background-color: #008877;
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.self-desc-label {
+    font-size: 25px;
+}
+
+@media (max-width: 700px) {
+    .my-header-div {
+        display: block;
+        width: 95%;
+        padding: 0px;
+    }
+    
+    .knowledge-div {
+        width: 100%;
+    }
+
+    .languages-div {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-name-label {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .image-style {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    .self-desc-label {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        padding: 5px;
+        padding-bottom: 8px;
+    }
+
+    .awards {
+        width: 95%;
+    }
+
+    .recommend-letter {
+        display: block;
+        width: 100%;
+        height: 250px;
+        border: none;
+    }
 }

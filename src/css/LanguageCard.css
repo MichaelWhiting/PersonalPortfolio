@@ -1,10 +1,10 @@
 .language-card {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    width: 200px;
+    width: 180px;
     height: auto;
-    margin: 30px;
+    margin: 20px;
     background-color: #008877;
     border-radius: 15px;
     vertical-align: middle;
@@ -23,6 +23,18 @@
 }
 
 .language-label {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 300;
+}
+
+@media (max-width: 450px) {
+    .language-card {
+        width: 160px;
+        margin: 10px;
+    }
+
+    .language-label {
+        font-size: 20px;
+        font-weight: 300;
+    }
 }
