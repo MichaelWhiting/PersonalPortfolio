@@ -37,7 +37,7 @@ h3 {
 }
 
 .languages-div {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin: auto;
     display: flex;
@@ -46,7 +46,7 @@ h3 {
 }
 
 .knowledge-div {
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
@@ -55,6 +55,7 @@ h3 {
     width: 100%;
     height: 600px;
     border: none;
+    margin-bottom: 20px;
 }
 
 .awards {

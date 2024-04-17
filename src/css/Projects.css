@@ -46,12 +46,31 @@
 }
 
 .description-label {
-    width: 55%;
+    width: 100%;
+    height: auto;
     margin: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.desc-div-ios {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.desc-div {
+    width: 55%;
+    height: auto;
+    display: flex;
+    justify-content: end;
 }
 
 .desc-vid-div {
     display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .gh-link {
@@ -86,16 +105,45 @@
     background: #00E2CD;
 }
 
+.carousel-img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-img-ios {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     width: 87%;
 }
 
-.video-div {
+.carousel-div {
     width: 40%;
-    height: 300px;
-    background-color: gray;
+    height: 280px;
     margin: 10px;
     transition: transform 0.2s;
+}
+
+.carousel-div-ios {
+    width: 25%; 
+    height: auto;
+    margin: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    transition: transform 0.2s;
+}
+
+.carousel-div-ios:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .video-div:hover {
@@ -129,11 +177,17 @@ h1 {
         width: 33%;
     }
 
-    .video-div {
+    .carousel-div {
         width: 95%;
-        height: 200px;
+        height: auto;
         margin: auto;
         margin: 10px;
+    }
+
+    .carousel-div-ios {
+        width: 50%; 
+        margin: auto;
+        margin-top: 10px;
     }
 
     .desc-vid-div {
@@ -144,5 +198,13 @@ h1 {
         width: 100%;
         margin: 10px;
         font-size: 12px;
+    }
+
+    .desc-div-ios {
+        width: 100%;
+    }
+    
+    .desc-div {
+        width: 100%;
     }
 }

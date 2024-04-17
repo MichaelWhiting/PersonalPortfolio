@@ -11,9 +11,12 @@ import JSIcon from "../../public/JavaScript.png";
 import HTMLIcon from "../../public/HTML.png";
 import CSSIcon from "../../public/CSS.png";
 import LuaIcon from "../../public/Lua.png";
+import TSIcon from "../../public/TypeScript.png"
 
 // PDFs
 import recommendation1 from "../../public/MTechRecommendationLetter.pdf"
+import recommendation2 from "../../public/DevMountainCert.pdf"
+import recommendation3 from "../../public/MTechCert.pdf"
 
 
 function Home() {
@@ -21,6 +24,7 @@ function Home() {
         { imageUrl: SwiftIcon, language: "Swift" },
         { imageUrl: ReactIcon, language: "ReactJS" },
         { imageUrl: JSIcon, language: "JavaScript" },
+        { imageUrl: TSIcon, language: "TypeScript" },
         { imageUrl: HTMLIcon, language: "HTML" },
         { imageUrl: CSSIcon, language: "CSS" },
         { imageUrl: LuaIcon, language: "Lua" },
@@ -52,7 +56,9 @@ function Home() {
                 <div className="awards">
                     <h3>Certificates & Letters of Recommendation</h3>
                     <br/>
+                    <iframe src={recommendation2} className="recommend-letter"></iframe>
                     <iframe src={recommendation1} className="recommend-letter"></iframe>
+                    <iframe src={recommendation3} className="recommend-letter"></iframe>
                 </div>
             </div>
         </div>
