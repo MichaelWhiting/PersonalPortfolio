@@ -53,14 +53,14 @@ function Projects() {
     },
     {
       name: "UVU Golf App",
-      description: "An iOS app built and designed to help keep track of golfers scores in UVU's sponsor golf tournament.",
+      description: "An iOS app built with other peers at Mountainland Technical College and designed to help keep track of golfers scores in UVU's sponsor golf tournament. This app was developed fully using SwiftUI and utilizes a Google Firebase Firestore to save all of data like user accounts, scores, events, and more. While developing this app, I was in charge of being the team lead.",
       ghLink: "https://github.com/MTechMobileDevelopment/UVU-Golf-App",
-      imageUrls: [ Register, Login, Leaderboards, EventScores, EventDetail, YourEvents, QRScanner, Settings ],
+      imageUrls: [ Login, Register, Leaderboards, EventScores, EventDetail, YourEvents, QRScanner, Settings ],
       iOS: true
     },
     {
       name: "Foot Prints",
-      description: "An iOS app where users can create points based on places they've visited and can share those points with others.",
+      description: "An iOS app where users can create points based on places they've visited and can share those points with others. This application was developed mostly in UIKit with a few animations being done in SwiftUI. This app utilizes a Google Firebase Database to store all of the information like User Accounts, Marker Locations, and handles the account creation. This app also utilizes Apple's MapKit API to generate the map and the locations on it.",
       ghLink: "https://github.com/MichaelWhiting/Foot-Prints",
       imageUrls: [ LoginFP, HomeFP, CreatePlaceFP, AccountFP ],
       iOS: true
