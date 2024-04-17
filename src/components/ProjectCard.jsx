@@ -38,7 +38,7 @@ function ProjectCard({ project }) {
       <div className="desc-vid-div">
         {iOS && (
           <>
-            <Carousel className="carousel-div-ios" data-bs-theme="light">
+            <Carousel className="carousel-div-ios" data-bs-theme="dark">
               {carouselItems}
             </Carousel>
             <div className="desc-div-ios">
