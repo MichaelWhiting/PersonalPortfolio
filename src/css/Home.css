@@ -37,7 +37,7 @@ h3 {
 }
 
 .languages-div {
-    width: 100%;
+    width: 85%;
     height: auto;
     margin: auto;
     display: flex;
@@ -46,7 +46,7 @@ h3 {
 }
 
 .knowledge-div {
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -76,7 +76,8 @@ h3 {
 @media (max-width: 700px) {
     .my-header-div {
         display: block;
-        width: 95%;
+        width: 100%;
+        background-color: red;
         padding: 0px;
     }
     

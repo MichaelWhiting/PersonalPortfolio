@@ -2,22 +2,21 @@ import React from 'react'
 
 // CSS
 import "../css/Home.css";
-import LanguageCard from '../components/LanguageCard';
+import LanguageCard from '../components/LanguageCard.jsx';
 
 // Images
-import SwiftIcon from "../../public/Swift.png";
-import ReactIcon from "../../public/React.png";
-import JSIcon from "../../public/JavaScript.png";
-import HTMLIcon from "../../public/HTML.png";
-import CSSIcon from "../../public/CSS.png";
-import LuaIcon from "../../public/Lua.png";
-import TSIcon from "../../public/TypeScript.png"
+import SwiftIcon from "../Icons/Swift.png";
+import ReactIcon from "../Icons/React.png";
+import JSIcon from "../Icons/JavaScript.png";
+import HTMLIcon from "../Icons/HTML.png";
+import CSSIcon from "../Icons/CSS.png";
+import LuaIcon from "../Icons/Lua.png";
+import TSIcon from "../Icons/TypeScript.png";
 
 // PDFs
-import recommendation1 from "../../public/MTechRecommendationLetter.pdf"
-import recommendation2 from "../../public/DevMountainCert.pdf"
-import recommendation3 from "../../public/MTechCert.pdf"
-
+import recommendation1 from "../PDFs/MTechRecommendationLetter.pdf"
+import recommendation2 from "../PDFs/DevMountainCert.pdf"
+import recommendation3 from "../PDFs/MTechCert.pdf"
 
 function Home() {
     const languages = [
@@ -40,7 +39,7 @@ function Home() {
                 <div className='profile-image'>
                     <div className="image-style"></div>
                 </div>
-                <div>
+                <div className='hi'>
                     <label className="my-name-label">Michael Whiting</label>
                     <label className="self-desc-label">
                         This is my personal portfolio website that shows off 
