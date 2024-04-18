@@ -14,9 +14,10 @@ import LuaIcon from "../Icons/Lua.png";
 import TSIcon from "../Icons/TypeScript.png";
 
 // PDFs
-import recommendation1 from "../PDFs/MTechRecommendationLetter.pdf"
-import recommendation2 from "../PDFs/DevMountainCert.pdf"
-import recommendation3 from "../PDFs/MTechCert.pdf"
+import MTechRecommend from "../PDFs/MTechRecommendationLetter.pdf"
+import DevMountCert from "../PDFs/DevMountainCert.pdf"
+import MTechCert from "../PDFs/MTechCert.pdf"
+import Resume from "../PDFs/MichaelResume.pdf"
 
 function Home() {
     const languages = [
@@ -55,9 +56,10 @@ function Home() {
                 <div className="awards">
                     <h3>Certificates & Letters of Recommendation</h3>
                     <br/>
-                    <iframe src={recommendation2} className="recommend-letter"></iframe>
-                    <iframe src={recommendation1} className="recommend-letter"></iframe>
-                    <iframe src={recommendation3} className="recommend-letter"></iframe>
+                    <iframe src={DevMountCert} className="recommend-letter"></iframe>
+                    <iframe src={MTechCert} className="recommend-letter"></iframe>
+                    <iframe src={MTechRecommend} className="recommend-letter"></iframe>
+                    <iframe src={Resume} className="resume"></iframe>
                 </div>
             </div>
         </div>

@@ -58,6 +58,14 @@ h3 {
     margin-bottom: 20px;
 }
 
+.resume {
+    display: block;
+    width: 100%;
+    height: 900px;
+    border: none;
+    margin-bottom: 20px;
+}
+
 .awards {
     background-color: #008877;
     border-radius: 8px;
