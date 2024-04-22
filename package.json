@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "nodemon backend/server/server.js",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "dev": "nodemon backend/server/server.js -w backend -w src",
+    "lint": "eslint . --ext js,jsx --report-u4nused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
