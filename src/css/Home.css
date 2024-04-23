@@ -82,13 +82,17 @@ h3 {
 }
 
 .certifications-div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: blue;
 }
 
 .certifications-div90 {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: red;
 }
