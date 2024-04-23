@@ -82,18 +82,20 @@ h3 {
 }
 
 .certifications-div {
+    position: relative; /* Required for absolute positioning */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
     background-color: blue;
 }
 
 .certifications-div90 {
+    position: relative; /* Required for absolute positioning */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
     background-color: red;
 }
 
@@ -101,13 +103,20 @@ h3 {
     width: 290px;
     height: 390px;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
 
 .cert90-item {
     width: 290px;
     height: 390px;
     rotate: 90deg;
     margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .title {
