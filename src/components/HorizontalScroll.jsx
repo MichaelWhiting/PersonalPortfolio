@@ -53,9 +53,6 @@ function HorizontalScroll({ title, rotate }) {
                         }
                     </motion.div>
                 }
-                {isMobile &&
-                    <h1>Person on mobile!</h1>
-                }
             </div>
         </section>
     )

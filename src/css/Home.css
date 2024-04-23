@@ -81,6 +81,22 @@ h3 {
     font-size: 25px;
 }
 
+.certifications-div {
+    display: block;
+}
+
+.cert-item {
+    width: 290px;
+    height: 390px;
+
+}
+
+.cert90-item {
+    width: 290px;
+    height: 390px;
+    rotate: 90deg;
+}
+
 
 @media (max-width: 700px) {
     .my-header-div {
