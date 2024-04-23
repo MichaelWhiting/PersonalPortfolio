@@ -64,7 +64,7 @@ function Home() {
             </div>
             { isMobile &&
             <>
-                <h1>Certifications</h1>
+                <h1 className="title">Certifications</h1>
                 <div className="certifications-div90">
                     <img src={DMCert} className="cert90-item"/>
                     <img src={MTechCert} className="cert90-item"/>
@@ -73,7 +73,7 @@ function Home() {
                     <img src={PathwayCert} className="cert90-item"/>
                 </div>
 
-                <h1>Resume & Recommendations</h1>
+                <h1 className="title">Resume & Recommendations</h1>
                 <div className="certifications-div">
                     <img src={Resume} className="cert-item"/>
                     <img src={MTechRecommend} className="cert-item"/>
