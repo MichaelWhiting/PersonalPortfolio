@@ -64,7 +64,7 @@ function Home() {
             </div>
             { isMobile &&
             <>
-                <h1 style={{textAlign: "center"}}>Certifications</h1>
+                <h1 style={{textAlign: "center", width: "100%"}}>Certifications</h1>
                 <div className="certifications-div90">
                     <img src={DMCert} className="cert90-item"/>
                     <img src={MTechCert} className="cert90-item"/>
@@ -73,7 +73,7 @@ function Home() {
                     <img src={PathwayCert} className="cert90-item"/>
                 </div>
 
-                <h1 style={{textAlign: "center"}}>Resume & Recommendations</h1>
+                <h1 style={{textAlign: "center", width: "100%"}}>Resume & Recommendations</h1>
                 <div className="certifications-div">
                     <img src={Resume} className="cert-item"/>
                     <img src={MTechRecommend} className="cert-item"/>
