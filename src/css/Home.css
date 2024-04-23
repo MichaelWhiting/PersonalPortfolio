@@ -96,14 +96,16 @@ h3 {
 .cert-item {
     width: 290px;
     height: 390px;
-    margin: auto;
+    display:block;
+    margin:auto;
 }
 
 .cert90-item {
     width: 290px;
     height: 390px;
     rotate: 90deg;
-    margin: auto;
+    display:block;
+    margin:auto;
 }
 
 .title {
