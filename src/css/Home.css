@@ -84,13 +84,11 @@ h3 {
 .certifications-div {
     display: block;
     width: 100%;
-    background-color: blue;
 }
 
 .certifications-div90 {
     display: block;
     width: 100%;
-    background-color: red;
 }
 
 .cert-item {
@@ -98,6 +96,7 @@ h3 {
     height: 390px;
     display:block;
     margin:auto;
+    margin-top: 20px;
 }
 
 .cert90-item {
@@ -106,6 +105,7 @@ h3 {
     rotate: 90deg;
     display:block;
     margin:auto;
+    margin-top: 20px;
 }
 
 .title {
