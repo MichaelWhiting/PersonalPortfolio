@@ -1,0 +1,35 @@
+.scroll-card {
+    width: 430px;
+    height: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.scroll-card-90 {
+    width: 430px;
+    height: 600px;
+    rotate: 90deg;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cert-div {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: auto;
+}
+
+.relative {
+    position: relative;
+    height: 300vh;
+}
+
+.title {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 30px;
+}

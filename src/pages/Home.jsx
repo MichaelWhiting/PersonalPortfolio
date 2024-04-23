@@ -1,8 +1,10 @@
-import React from 'react'
+
+import React from "react";
 
 // CSS
 import "../css/Home.css";
 import LanguageCard from '../components/LanguageCard.jsx';
+import HorizontalScroll from "../components/HorizontalScroll.jsx";
 
 // Images
 import SwiftIcon from "../Icons/Swift.png";
@@ -12,12 +14,6 @@ import HTMLIcon from "../Icons/HTML.png";
 import CSSIcon from "../Icons/CSS.png";
 import LuaIcon from "../Icons/Lua.png";
 import TSIcon from "../Icons/TypeScript.png";
-
-// PDFs
-import MTechRecommend from "../PDFs/MTechRecommendationLetter.pdf"
-import DevMountCert from "../PDFs/DevMountainCert.pdf"
-import MTechCert from "../PDFs/MTechCert.pdf"
-import Resume from "../PDFs/MichaelResume.pdf"
 
 function Home() {
     const languages = [
@@ -31,7 +27,7 @@ function Home() {
     ];
 
     const languageCards = languages.map((language, i) => {
-        return <LanguageCard key={i} imageUrl={language.imageUrl} language={language.language}/>
+        return <LanguageCard key={i} imageUrl={language.imageUrl} language={language.language} />
     })
 
     return (
@@ -43,7 +39,7 @@ function Home() {
                 <div className='hi'>
                     <label className="my-name-label">Michael Whiting</label>
                     <label className="self-desc-label">
-                        This is my personal portfolio website that shows off 
+                        This is my personal portfolio website that shows off
                         my skills and some of my projects which I have worked on.
                     </label>
                 </div>
@@ -53,15 +49,10 @@ function Home() {
                 <div className='languages-div'>
                     {languageCards}
                 </div>
-                <div className="awards">
-                    <h3>Certificates & Letters of Recommendation</h3>
-                    <br/>
-                    <iframe src={DevMountCert} className="recommend-letter"></iframe>
-                    <iframe src={MTechCert} className="recommend-letter"></iframe>
-                    <iframe src={MTechRecommend} className="recommend-letter"></iframe>
-                    <iframe src={Resume} className="resume"></iframe>
-                </div>
+
             </div>
+            <HorizontalScroll title="Certifications" rotate={true}/>
+            <HorizontalScroll title="Resume & Recommendations" rotate={false}/>
         </div>
     )
 }
