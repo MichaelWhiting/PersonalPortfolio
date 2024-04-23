@@ -83,10 +83,12 @@ h3 {
 
 .certifications-div {
     display: block;
+    width: 100%;
 }
 
 .certifications-div90 {
     display: block;
+    width: 100%;
 }
 
 .cert-item {
@@ -104,7 +106,6 @@ h3 {
 
 .title {
     text-align: center;
-    width: 100%;
     margin: auto;
 }
 
