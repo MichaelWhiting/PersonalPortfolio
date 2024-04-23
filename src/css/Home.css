@@ -120,7 +120,6 @@ h3 {
     .my-header-div {
         display: block;
         width: 100%;
-        background-color: red;
         padding: 0px;
     }
     
@@ -137,6 +136,7 @@ h3 {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto
     }
 
     .my-name-label {
