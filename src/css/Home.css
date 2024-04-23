@@ -84,11 +84,13 @@ h3 {
 .certifications-div {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .certifications-div90 {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 .cert-item {
