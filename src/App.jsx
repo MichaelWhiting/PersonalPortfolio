@@ -7,10 +7,12 @@ import NavBar from "./components/NavBar.jsx"
 import "./css/App.css";
 
 function App() {
-  useEffect(() => { // for some reason the CSS file isn't changing the color of the body, so doing it here instead
-    document.body.style.backgroundColor = "rgb(0,180,161)";
-    document.body.style.backgroundImage = "radial-gradient(circle, rgba(0,180,161,1) 0%, rgba(0,136,119,1) 100%)";
-  },[]);
+  useEffect(() => {
+    document.body.style.backgroundColor = "#000000";
+    document.body.style.backgroundImage = "linear-gradient(0deg, rgba(98,98,98,1) 0%, rgba(0,0,0,1) 100%)";
+    document.body.style.height = "4000px"
+
+  }, []);
 
   return (
     <div className='container-div'>
