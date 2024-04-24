@@ -8,7 +8,8 @@ import "./css/App.css";
 
 function App() {
   useEffect(() => { // for some reason the CSS file isn't changing the color of the body, so doing it here instead
-    document.body.style.backgroundColor = "#00B4A1";
+    document.body.style.backgroundColor = "rgb(0,180,161)";
+    document.body.style.backgroundImage = "radial-gradient(circle, rgba(0,180,161,1) 0%, rgba(0,136,119,1) 100%)";
   },[]);
 
   return (

@@ -1,6 +1,6 @@
 import * as Icon from "react-bootstrap-icons";
-import React from "react";
-import { Carousel } from "react-bootstrap";
+import React, { useState } from "react";
+import { Carousel, Spinner } from "react-bootstrap";
 
 import "../css/Projects.css";
 
@@ -10,13 +10,29 @@ function ProjectCard({ project }) {
   const { name, ghLink, description, imageUrls, iOS } = project;
 
   const carouselItems = imageUrls.map((url, i) => {
+    const [loading, setLoading] = useState(true);
+
     return iOS ? (
       <Carousel.Item key={i}>
-        <img src={url} className="carousel-img-ios" />
+        { loading && 
+          <Spinner/>
+        }
+        <img 
+          src={url} 
+          className="carousel-img-ios" 
+          onLoad={() => setLoading(false)}
+          style={{display: loading ? "none" : "block"}}/>
       </Carousel.Item>
     ) : (
       <Carousel.Item key={i}>
-        <img src={url} className="carousel-img" />
+        { loading && 
+          <Spinner/>
+        }
+        <img 
+          src={url} 
+          className="carousel-img" 
+          onLoad={() => setLoading(false)}
+          style={{display: loading ? "none" : "block"}}/>      
       </Carousel.Item>
     );
   });
