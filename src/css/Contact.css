@@ -18,7 +18,7 @@ form {
 }
 
 .contact-info {
-    background-color: #008877;
+    background-color: #2A272A;
     border-radius: 8px;
     font-size: 20px;
     height: auto;
@@ -35,7 +35,7 @@ form {
     width: 80%;
     height: auto;
     margin: auto;
-    background-color: #008877;
+    background-color: #2A272A;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -53,7 +53,7 @@ form {
 }
 
 .form-input {
-    background-color: #005E4F;
+    background-color: #4B4A54;
     border: 0px solid white;
     outline-color: white;
     border-radius: 10px;
@@ -70,7 +70,7 @@ form {
 }
 
 .form-textarea {
-    background-color: #005E4F;
+    background-color: #4B4A54;
     border: 0px solid white;
     outline-color: white;
     border-radius: 10px;

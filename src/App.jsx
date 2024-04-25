@@ -8,9 +8,9 @@ import "./css/App.css";
 
 function App() {
   useEffect(() => {
-    document.body.style.backgroundColor = "#000000";
-    document.body.style.backgroundImage = "linear-gradient(0deg, rgba(98,98,98,1) 0%, rgba(0,0,0,1) 100%)";
-    document.body.style.height = "4000px"
+    document.body.style.backgroundColor = "#1c1c1c";
+    document.body.style.backgroundImage = "linear-gradient(0deg, rgba(164,173,191,1) 0%, rgba(28,28,28,1) 100%)";
+    document.body.style.height = "2000px"
 
   }, []);
 

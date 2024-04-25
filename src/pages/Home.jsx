@@ -2,7 +2,7 @@
 import React from "react";
 
 // CSS
-import "../css/Home.css";
+import "../css/Home.css"
 import LanguageCard from '../components/LanguageCard.jsx';
 import HorizontalScroll from "../components/HorizontalScroll.jsx";
 
@@ -43,7 +43,7 @@ function Home() {
 
     return (
         <div className='outer-div fade-in'>
-            <div className="my-header-div">
+            <div className="my-header-div" style={{background: "#373A3E"}}>
                 <div className='profile-image'>
                     <div className="image-style"></div>
                 </div>

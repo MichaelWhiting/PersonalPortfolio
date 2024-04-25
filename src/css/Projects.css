@@ -1,5 +1,5 @@
 .my-header-div {
-    background-color: #008877;
+    background-color: #2A272A;
     border-radius: 8px;
     font-size: 20px;
     height: auto;
@@ -15,7 +15,7 @@
 }
 
 .projects-div {
-    background-color: #008877;
+    background-color: #2A272A;
     border-radius: 8px;
     font-size: 20px;
     height: auto;
@@ -27,7 +27,7 @@
 }
 
 .project-div {
-    background-color: #01695c;
+    background-color: #4B4A54;
     border-radius: 8px;
     font-size: 20px;
     height: auto;
@@ -77,7 +77,7 @@
     width: 10%;
     height: 40px;
     margin: 5px;
-    background-color: #00B4A1;
+    background-color: #000000;
     border: 0px solid white;
     border-radius: 10px;
     color: white;
