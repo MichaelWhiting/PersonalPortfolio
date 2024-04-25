@@ -32,7 +32,7 @@ function HorizontalScroll({ title, rotate }) {
 
     useEffect(() => {
         const unsubscribeX = x.onChange(value => {
-            if (value === "-29%") {
+            if (value === "-29%" && isMobile === false) {
                 setShowTitle(false)
             } else {
                 setShowTitle(true)
