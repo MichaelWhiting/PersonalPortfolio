@@ -40,7 +40,7 @@ function HorizontalScroll({ title, rotate }) {
         });
 
         return () => {
-            unsubscribeX(); // Cleanup the subscription
+            unsubscribeX();
         };
     }, [x]); 
 
