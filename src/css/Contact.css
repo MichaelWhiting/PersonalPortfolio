@@ -92,7 +92,7 @@ form {
     width: 100px;
     height: 40px;
     margin: 5px;
-    background-color: #00B4A1;
+    background-color: #1c1c1c;
     border: 0px solid white;
     border-radius: 10px;
     color: white;
@@ -103,7 +103,7 @@ form {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid white;
-    background: #00E2CD;
+    background: #4B4A54;
 }
 
 .outer-div {

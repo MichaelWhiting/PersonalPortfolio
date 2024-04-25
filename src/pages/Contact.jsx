@@ -9,7 +9,15 @@ function Contact() {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
+        const emailVal = form.current.user_email.value;
+        const subjectVal = form.current.subject.value;
+        const messageVal = form.current.message.value;
+
+        if (emailVal === "" || subjectVal === "" || messageVal === "") {
+            console.log("One of the textfields are empty, returning and not sending");
+            return;
+        }
+        
         emailjs
           .sendForm("service_b40t07w", "template_vgv1b0q", form.current, {
             publicKey: "cQhMOY4rUlzsU5dVa",
