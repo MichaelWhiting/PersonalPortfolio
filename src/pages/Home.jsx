@@ -101,6 +101,7 @@ function Home() {
                 </div>
 
             </div>
+            <br/>
             { isMobile &&
             <>
                 <h1 style={{textAlign: "center", width: "100%"}}>Certifications</h1>
