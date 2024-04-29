@@ -5,15 +5,16 @@
     width: 180px;
     height: auto;
     margin: 20px;
-    background-color: #515B63;
+    /* background-color: #515B63; */
     border-radius: 15px;
     vertical-align: middle;
     transition: transform 0.2s;
+
 }
 
 .language-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    box-shadow: 1 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 .logo-img {

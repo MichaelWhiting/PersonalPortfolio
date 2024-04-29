@@ -28,10 +28,11 @@ function HorizontalScroll({ title, rotate }) {
     const [showTitle, setShowTitle] = useState(true);
     const targetRef = useRef(null);
     const { scrollYProgress } = useScroll({ target: targetRef });
-    const x = useTransform(scrollYProgress, [0, 1], rotate ? ["28%", "-29%"] : ["1%", "1%"]);
+    const x = useTransform(scrollYProgress, [0, 1], rotate ? ["35%", "-28%"] : ["1%", "1%"]); // ["28%", "-29%"]
 
     useEffect(() => {
-        const unsubscribeX = x.onChange(value => {
+        const unsubscribeX = x.on("change", (value) => {
+            console.log("x:", x.current, "y:", scrollYProgress.current)
             if (value === "-29%" && isMobile === false) {
                 setShowTitle(false)
             } else {
@@ -42,26 +43,28 @@ function HorizontalScroll({ title, rotate }) {
         return () => {
             unsubscribeX();
         };
-    }, [x]); 
+    }, [scrollYProgress, x]);
 
     const certs90 = [
-        {img: DMCert, pdf: DMCertPDF}, 
-        {img: MTechCert, pdf: MTechCertPDF}, 
-        {img: HSDiploma, pdf: HSDiplomaPDF}, 
-        {img: HighHonorRoll, pdf: HighHonorRollPDF}, 
-        {img: PathwayCert, pdf: PathwayCertPDF}
+        { img: DMCert, pdf: DMCertPDF },
+        { img: MTechCert, pdf: MTechCertPDF },
+        { img: HSDiploma, pdf: HSDiplomaPDF },
+        { img: HighHonorRoll, pdf: HighHonorRollPDF },
+        { img: PathwayCert, pdf: PathwayCertPDF }
     ];
+
     const certs = [
-        {img: Resume, pdf: ResumePDF}, 
-        {img: MTechRecommend, pdf: MTechRecommendPDF}
+        { img: Resume, pdf: ResumePDF },
+        { img: MTechRecommend, pdf: MTechRecommendPDF }
     ];
 
     const isMobile = /Mobi/.test(navigator.userAgent);
 
     const images90 = certs90.map((obj, i) => {
+        console.log("trying to load 90 image")
         return (
             <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i}>
-                <img src={obj.img} className="scroll-card-90"/>
+                <img src={obj.img} className="scroll-card-90" />
             </a>
         )
     });
@@ -69,15 +72,22 @@ function HorizontalScroll({ title, rotate }) {
     const images = certs.map((obj, i) => {
         return (
             <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i}>
-                <img src={obj.img} className="scroll-card"/>
+                <img src={obj.img} className="scroll-card" />
             </a>
         )
     });
 
     return (
         <section ref={targetRef} className={rotate ? "relative90" : "relative"}>
-            { showTitle && <h3 className="title fade-in">{title}</h3> }
+            {showTitle && <h3 className="title">{title}</h3>}
+            <br />
             <div className="cert-div">
+                {isMobile &&
+                    <>
+                        {images90}
+                        {images}
+                    </>
+                }
                 {!isMobile &&
                     <motion.div style={{ x }} className="cert-div">
                         {rotate &&

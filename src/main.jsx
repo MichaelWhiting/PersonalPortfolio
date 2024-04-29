@@ -7,8 +7,7 @@ import App from './App.jsx'
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
-
-import 'bootstrap/dist/css/bootstrap.css'; // this is the import for bootstrap css
+import FrontPage from './pages/FrontPage.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +15,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>}/>
       <Route path="projects" element={<Projects/>}/>
       <Route path="contact" element={<Contact/>}/>
+      <Route path="front-page" element={<FrontPage/>}/>
     </Route>
   )
 );

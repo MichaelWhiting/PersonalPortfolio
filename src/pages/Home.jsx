@@ -47,6 +47,7 @@ function Home() {
         { imageUrl: CSSIcon, language: "CSS" },
         { imageUrl: LuaIcon, language: "Lua" },
     ];
+    
 
     const certs90 = [
         {img: DMCert, pdf: DMCertPDF}, 

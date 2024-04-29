@@ -1,10 +1,36 @@
-.container-div {
-    width: 100%;
-    height: 100%;
-    color: white;
-    background-color: #1c1c1c;
-    background-image: linear-gradient(0deg, rgba(164,173,191,1) 0%, rgba(28,28,28,1) 100%);
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
+
+.container-div {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #1c1c1c; /* this is just incase bg-video doesn't show up */
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.my-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: white;
+    transform-origin: 0%;
+    z-index: 100;
+  }
 
 /* Animations */
 .fade-in {

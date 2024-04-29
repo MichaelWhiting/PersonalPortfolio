@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 // CSS
 import "../css/NavBar.css";
 import "../css/App.css";
+import 'bootstrap/dist/css/bootstrap.css'; // this is the import for bootstrap css
 
 function NavBar() {
   return (
@@ -23,6 +24,7 @@ function NavBar() {
                 <NavLink to="/" className="nav-link ms-2">Home</NavLink>
                 <NavLink to="/projects" className="nav-link ms-2">Projects</NavLink>
                 <NavLink to="/contact" className="nav-link ms-2">Contact</NavLink>
+                <NavLink to="/front-page" className="nav-link ms-2">FrontPage</NavLink>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
