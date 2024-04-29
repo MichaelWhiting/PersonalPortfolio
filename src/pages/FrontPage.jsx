@@ -27,8 +27,6 @@ const anim = batch(Sticky(), Fade(), Move(0, 0, 15, -1000)) // -700 for x1
 const sidewaysAnim = batch(Sticky(), Fade(0.5, 1), Move(3000, 0, -1500, 0)) // -700 for x1
 
 function FrontPage() {
-    const isMobile = /Mobi/.test(navigator.userAgent);
-
     const languages = [
         { imageUrl: SwiftIcon, language: "Swift" },
         { imageUrl: ReactIcon, language: "ReactJS" },
@@ -69,6 +67,7 @@ function FrontPage() {
             <ScrollPage>
                 <Animator animation={sidewaysAnim} className="animator-certs">
                     <HorizontalScroll title="Certifications" rotate={true} />
+                    <br/>
                 </Animator>
             </ScrollPage>
 
@@ -89,4 +88,4 @@ function FrontPage() {
     )
 }
 
-export default FrontPage
+export default FrontPage;
