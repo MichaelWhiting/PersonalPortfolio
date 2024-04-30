@@ -33,3 +33,10 @@
     color: white;
     text-align: center;
 }
+
+@media (max-width: 650px) {
+    .header-title {
+        width: 100%;
+        font-size: 40px;
+    }
+}
