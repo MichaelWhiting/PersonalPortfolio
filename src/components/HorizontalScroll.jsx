@@ -31,8 +31,9 @@ function HorizontalScroll({ title, rotate }) {
     const x = useTransform(scrollYProgress, [0, 1], rotate ? ["35%", "-28%"] : ["1%", "1%"]); // ["28%", "-29%"]
 
     useEffect(() => {
+        console.log("running!")
         const unsubscribeX = x.on("change", (value) => {
-            console.log("x:", x.current, "y:", scrollYProgress.current)
+            // console.log("x:", x.current, "y:", scrollYProgress.current)
             if (value === "-29%" && isMobile === false) {
                 setShowTitle(false)
             } else {
@@ -43,7 +44,7 @@ function HorizontalScroll({ title, rotate }) {
         return () => {
             unsubscribeX();
         };
-    }, [scrollYProgress, x]);
+    }, [scrollYProgress]);
 
     const certs90 = [
         { img: DMCert, pdf: DMCertPDF },
@@ -79,7 +80,7 @@ function HorizontalScroll({ title, rotate }) {
 
     return (
         <section ref={targetRef} className={rotate ? "relative90" : "relative"}>
-            {showTitle && <h3 className="title">{title}</h3>}
+            {/* {showTitle && <h3 className="title">{title}</h3>} */}
             <br />
             <div className="cert-div">
                 {isMobile &&

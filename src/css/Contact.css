@@ -18,7 +18,7 @@ form {
 }
 
 .contact-info {
-    background-color: #2A272A;
+    background-color: #00C8A0;
     border-radius: 8px;
     font-size: 20px;
     height: auto;
@@ -26,6 +26,7 @@ form {
     margin: auto;
     padding: 20px;
     overflow: hidden;
+    border: 1px solid white;
 }
 
 .form-container {
@@ -35,9 +36,10 @@ form {
     width: 80%;
     height: auto;
     margin: auto;
-    background-color: #2A272A;
+    background-color: #00C8A0;
     border-radius: 8px;
     overflow: hidden;
+    border: 1px solid white;
 }
 
 .form-item {
@@ -53,7 +55,7 @@ form {
 }
 
 .form-input {
-    background-color: #4B4A54;
+    background-color: #00AF8C;
     border: 0px solid white;
     outline-color: white;
     border-radius: 10px;
@@ -70,7 +72,7 @@ form {
 }
 
 .form-textarea {
-    background-color: #4B4A54;
+    background-color: #00AF8C;
     border: 0px solid white;
     outline-color: white;
     border-radius: 10px;
@@ -87,12 +89,15 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: white;
+}
 
 .submit-btn {
     width: 100px;
     height: 40px;
     margin: 5px;
-    background-color: #1c1c1c;
+    background-color: #009678;
     border: 0px solid white;
     border-radius: 10px;
     color: white;
@@ -103,7 +108,7 @@ form {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid white;
-    background: #4B4A54;
+    background: #00E1B4;
 }
 
 .outer-div {

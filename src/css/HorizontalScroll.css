@@ -37,6 +37,7 @@
 .relative {
     position: relative;
     height: 100vh;
+    margin-top: 50px;
 }
 
 .relative90 {
@@ -46,8 +47,13 @@
 
 .title {
     position: -webkit-sticky;
-    position: sticky;
-    top: 25px;
+    position: fixed;
+    width: 100%;
+    font-size: 30px;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    top: 65px;
+    text-align: center;
 }
 
 @media (max-width: 700px) {
