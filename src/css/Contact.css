@@ -145,6 +145,7 @@ form {
 
     .form-textarea {
         width: 99%;
+        height: 20vh;
         margin: auto;
     }
 
