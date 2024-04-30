@@ -15,10 +15,10 @@ import FrontPage from './pages/FrontPage.jsx';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
-      <Route index element={<Home/>}/>
+      <Route index element={<FrontPage/>}/>
       <Route path="projects" element={<Projects/>}/>
       <Route path="contact" element={<Contact/>}/>
-      <Route path="front-page" element={<FrontPage/>}/>
+      {/* <Route path="front-page" element={<FrontPage/>}/> */}
     </Route>
   )
 );
