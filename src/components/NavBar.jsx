@@ -10,16 +10,14 @@ import 'bootstrap/dist/css/bootstrap.css'; // this is the import for bootstrap c
 function NavBar() {
   return (
     <Navbar className="me-2" expand='md' data-bs-theme="dark">
-        <Navbar.Brand>
+        {/* <Navbar.Brand>
           <NavLink to="/" className="nav-link w-100">
             <div className="brand-container">
-                {/* <Icon.Person className="person-icon"/> */}
-                <label className="site-name"> </label>
             </div>
           </NavLink>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="m-3">
+        </Navbar.Brand> */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-2 mt-2"/>
+        <Navbar.Collapse className="ms-1">
             <Nav className="ms-auto me-3 my-3">
                 <NavLink to="/" className="nav-link ms-2">Home</NavLink>
                 <NavLink to="/projects" className="nav-link ms-2">Projects</NavLink>
