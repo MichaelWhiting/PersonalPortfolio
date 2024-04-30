@@ -1,7 +1,7 @@
-import { Outlet } from 'react-router-dom'
-import { useEffect, useRef } from 'react';
 import { motion, useScroll } from 'framer-motion';
+import { Outlet } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 // Pages & Components/CSS
 import NavBar from "./components/NavBar.jsx"
@@ -16,7 +16,7 @@ function App() {
   const { scrollYProgress } = useScroll()
 
   useEffect(() => {
-    document.body.style.backgroundColor = "#1c1c1c";
+    document.body.style.backgroundColor = "#00C8A0"; // 1c1c1c
   }, []);
 
 
