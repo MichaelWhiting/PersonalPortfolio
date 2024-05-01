@@ -47,7 +47,7 @@ function App() {
 
   return (
     <>
-      <motion.div className={isMobile ? "my-progress-bar" : "my-progress-bar-mobile"} style={{ scaleX: scrollYProgress }} />
+      <motion.div className={!isMobile ? "my-progress-bar" : "my-progress-bar-mobile"} style={{ scaleX: scrollYProgress }} />
       <div className='container-div'>
         <video autoPlay loop muted playsInline className="bg-video">
           <source src={BackgroundVideo} type="video/mp4" />
