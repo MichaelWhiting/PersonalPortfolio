@@ -32,6 +32,12 @@
     text-align: center;
 }
 
+.mobile-cert-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-title {
     width: 100%;
     font-size: 100px;

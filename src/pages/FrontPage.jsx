@@ -68,44 +68,45 @@ function FrontPage() {
                     {languageCards}
                 </Animator>
             </ScrollPage>
-
-            <ScrollPage>
-                {(scrollY < 0.7 && scrollY > 0.38) &&
-                    <label className="sticky-label fade-in-slow">Certifications</label>
-                }
-            </ScrollPage>
-
-            {isMobile &&
-                <div className="animator-certs-mobile">
-                    <HorizontalScroll title="Certifications" rotate={true} />
-                </div>
-            }
-            {!isMobile &&
+            <div className={isMobile ? "mobile-cert-div" : ""}>
                 <ScrollPage>
-                    <Animator animation={sidewaysAnim} className="animator-certs">
+                    {(scrollY < 0.7 && scrollY > 0.38) &&
+                        <label className="sticky-label fade-in-slow">Certifications</label>
+                    }
+                </ScrollPage>
+
+                {isMobile &&
+                    <div className="animator-certs-mobile">
                         <HorizontalScroll title="Certifications" rotate={true} />
-                    </Animator>
-                </ScrollPage>
-            }
-
-            <ScrollPage>
-                {(scrollY < 0.97 && scrollY > 0.79) &&
-                    <label className="sticky-label fade-in-slow">Resume & Recommendations</label>
+                    </div>
                 }
-            </ScrollPage>
+                {!isMobile &&
+                    <ScrollPage>
+                        <Animator animation={sidewaysAnim} className="animator-certs">
+                            <HorizontalScroll title="Certifications" rotate={true} />
+                        </Animator>
+                    </ScrollPage>
+                }
 
-            {isMobile &&
-                <div className="animator-certs-mobile">
-                    <HorizontalScroll title="Resume & Recommendations" rotate={false} />
-                </div>
-            }
-            {!isMobile &&
                 <ScrollPage>
-                    <Animator animation={anim} className="animator-certs">
-                        <HorizontalScroll title="Resume & Recommendations" rotate={false} />
-                    </Animator>
+                    {(scrollY < 0.97 && scrollY > 0.79) &&
+                        <label className="sticky-label fade-in-slow">Resume & Recommendations</label>
+                    }
                 </ScrollPage>
-            }
+
+                {isMobile &&
+                    <div className="animator-certs-mobile">
+                        <HorizontalScroll title="Resume & Recommendations" rotate={false} />
+                    </div>
+                }
+                {!isMobile &&
+                    <ScrollPage>
+                        <Animator animation={anim} className="animator-certs">
+                            <HorizontalScroll title="Resume & Recommendations" rotate={false} />
+                        </Animator>
+                    </ScrollPage>
+                }
+            </div>
         </ScrollContainer >
     )
 }
