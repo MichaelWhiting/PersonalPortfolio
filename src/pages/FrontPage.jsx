@@ -27,7 +27,7 @@ import "../css/FrontPage.css";
 import { useEffect } from 'react';
 
 // Animations
-const anim = batch(Sticky(), Fade(), Move(0, 0, 15, -1000)) // -700 for x1
+const anim = batch(Sticky(), Fade(), Move(0, 0, 1, -1000)) // -700 for x1
 const sidewaysAnim = batch(Sticky(), Fade(0.5, 1), Move(3000, 0, -1500, 0)) // -700 for x1
 const animStr = (i) => `fadeInAnimation ${250}ms ease-out ${100 * (i + 1)}ms forwards`;
 
@@ -77,7 +77,7 @@ function FrontPage() {
 
             <ScrollPage>
                 {isMobile &&
-                    <Animator animation={anim} className="animator-certs">
+                    <Animator animation={anim} className="animator-certs-mobile">
                         <HorizontalScroll title="Certifications" rotate={true} />
                     </Animator>
                 }
