@@ -84,10 +84,8 @@ function HorizontalScroll({ title, rotate }) {
             <div className="cert-div">
                 {isMobile &&
                     <>
-                        <div className="mobile-imgs">
                             {images90}
                             {images}
-                        </div>
                     </>
                 }
                 {!isMobile &&
