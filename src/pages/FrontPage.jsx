@@ -54,7 +54,8 @@ function FrontPage() {
     })
 
     return (
-        <div style={{height: "auto"}}>
+        <div>
+            <h6>hi chip</h6>
             <ScrollContainer>
                 <ScrollPage>
                     <Animator animation={anim} className="animator-div">
@@ -70,8 +71,8 @@ function FrontPage() {
                     </Animator>
                 </ScrollPage>
 
-                <ScrollPage>
-                    <div style={{height: "0px", margin: "0px"}}></div>
+                <ScrollPage style={{height: "200px"}}>
+                    {/* <div style={{height: "0px", margin: "0px"}}></div> */}
                 </ScrollPage>
 
                 {!isMobile &&
@@ -89,10 +90,13 @@ function FrontPage() {
                         </ScrollPage>
                     </>
                 }
+                 <ScrollPage style={{height: "200px"}}>
+                    {/* <div style={{height: "0px", margin: "0px"}}></div> */}
+                </ScrollPage>
                 {!isMobile &&
                     <>
                         <ScrollPage>
-                            {(scrollY < 0.97 && scrollY > 0.79) &&
+                            {(scrollY < 0.88 && scrollY > 0.70) &&
                                 <label className="sticky-label fade-in-slow">Resume & Recommendations</label>
                             }
                         </ScrollPage>
@@ -107,7 +111,6 @@ function FrontPage() {
             </ScrollContainer >
             {isMobile &&
                 <div className="animator-certs-mobile">
-                    helloooo
                     <HorizontalScroll title="Certifications" rotate={true} />
                 </div>
             }

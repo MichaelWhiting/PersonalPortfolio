@@ -65,7 +65,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-bottom: 0px;
 }
 
 @media (max-width: 700px) {
