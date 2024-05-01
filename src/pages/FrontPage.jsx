@@ -94,11 +94,18 @@ function FrontPage() {
                 }
             </ScrollPage>
 
-            <ScrollPage>
-                <Animator animation={anim} className="animator-certs">
+            {isMobile &&
+                <div className="animator-certs-mobile">
                     <HorizontalScroll title="Resume & Recommendations" rotate={false} />
-                </Animator>
-            </ScrollPage>
+                </div>
+            }
+            {!isMobile &&
+                <ScrollPage>
+                    <Animator animation={anim} className="animator-certs">
+                        <HorizontalScroll title="Resume & Recommendations" rotate={false} />
+                    </Animator>
+                </ScrollPage>
+            }
         </ScrollContainer >
     )
 }
