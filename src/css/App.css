@@ -1,6 +1,5 @@
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    text-shadow: 2px 2px 2px rgb(118, 118, 118);
 }
 
 .container-div {
@@ -38,6 +37,28 @@
     animation: fadeInAnimation ease 0.45s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+
+    .fade-in {
+    animation: fadeInAnimation ease 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-in-slow {
+    animation: fadeInAnimation ease 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 }
 
 .fade-in-slow {

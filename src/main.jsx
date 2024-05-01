@@ -11,6 +11,7 @@ import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import Contact from './pages/Contact.jsx';
 import FrontPage from './pages/FrontPage.jsx';
+import Trash from './pages/Trash.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +19,7 @@ const router = createBrowserRouter(
       <Route index element={<FrontPage/>}/>
       <Route path="projects" element={<Projects/>}/>
       <Route path="contact" element={<Contact/>}/>
-      {/* <Route path="front-page" element={<FrontPage/>}/> */}
+      <Route path="joke" element={<Trash/>}/>
     </Route>
   )
 );

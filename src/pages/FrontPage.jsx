@@ -26,13 +26,18 @@ import TSIcon from "../Icons/TypeScript.png";
 import "../css/FrontPage.css";
 import { useEffect } from 'react';
 
+// Animations
 const anim = batch(Sticky(), Fade(), Move(0, 0, 15, -1000)) // -700 for x1
 const sidewaysAnim = batch(Sticky(), Fade(0.5, 1), Move(3000, 0, -1500, 0)) // -700 for x1
+const animStr = (i) => `fadeInAnimation ${250}ms ease-out ${100 * (i + 1)}ms forwards`;
 
 function FrontPage() {
     const scrollY = useSelector(state => state.scrollY);
+    const isMobile = /Mobi/.test(navigator.userAgent);
 
-    useEffect(() => {}, [scrollY]);
+    useEffect(() => {
+        // console.log(scrollY);
+    }, [scrollY]);
 
     const languages = [
         { imageUrl: SwiftIcon, language: "Swift" },
@@ -45,7 +50,7 @@ function FrontPage() {
     ];
 
     const languageCards = languages.map((language, i) => {
-        return <LanguageCard key={i} imageUrl={language.imageUrl} language={language.language} />
+        return <LanguageCard key={i} imageUrl={language.imageUrl} language={language.language} style={{ animation: animStr(i), opacity: 0 }} />
     })
 
     return (
@@ -53,12 +58,8 @@ function FrontPage() {
             <ScrollPage>
                 <Animator animation={anim} className="animator-div">
                     <label className='header-title'>Michael Whiting</label>
-                    <Icon.ChevronDoubleDown className="arrow-icon pulse"/>
+                    <Icon.ChevronDoubleDown className="arrow-icon pulse" />
                 </Animator>
-            </ScrollPage>
-
-            <ScrollPage>
-                <div style={{ height: "1px" }}></div>
             </ScrollPage>
 
             <ScrollPage>
@@ -69,21 +70,26 @@ function FrontPage() {
             </ScrollPage>
 
             <ScrollPage>
-                <div style={{ height: "1px" }}></div>
-                { (scrollY < 0.65 && scrollY > 0.43) &&
+                {(scrollY < 0.7 && scrollY > 0.38) &&
                     <label className="sticky-label fade-in-slow">Certifications</label>
                 }
             </ScrollPage>
 
             <ScrollPage>
-                <Animator animation={sidewaysAnim} className="animator-certs">
-                    <HorizontalScroll title="Certifications" rotate={true} />
-                </Animator>
+                {isMobile &&
+                    <Animator animation={anim} className="animator-certs">
+                        <HorizontalScroll title="Certifications" rotate={true} />
+                    </Animator>
+                }
+                {!isMobile &&
+                    <Animator animation={sidewaysAnim} className="animator-certs">
+                        <HorizontalScroll title="Certifications" rotate={true} />
+                    </Animator>
+                }
             </ScrollPage>
 
             <ScrollPage>
-                <div style={{ height: "1px" }}></div>
-                { (scrollY < 0.84 && scrollY > 0.7) &&
+                {(scrollY < 0.97 && scrollY > 0.79) &&
                     <label className="sticky-label fade-in-slow">Resume & Recommendations</label>
                 }
             </ScrollPage>
@@ -92,10 +98,6 @@ function FrontPage() {
                 <Animator animation={anim} className="animator-certs">
                     <HorizontalScroll title="Resume & Recommendations" rotate={false} />
                 </Animator>
-            </ScrollPage>
-
-            <ScrollPage>
-                <div style={{ height: "1px" }}></div>
             </ScrollPage>
         </ScrollContainer >
     )

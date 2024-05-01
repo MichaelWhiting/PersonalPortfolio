@@ -10,19 +10,13 @@ import 'bootstrap/dist/css/bootstrap.css'; // this is the import for bootstrap c
 function NavBar() {
   return (
     <Navbar className="me-2" expand='md' data-bs-theme="dark">
-        {/* <Navbar.Brand>
-          <NavLink to="/" className="nav-link w-100">
-            <div className="brand-container">
-            </div>
-          </NavLink>
-        </Navbar.Brand> */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-2 mt-2"/>
         <Navbar.Collapse className="ms-1">
             <Nav className="ms-auto me-3 my-3">
-                <NavLink to="/" className="nav-link ms-2">Home</NavLink>
-                <NavLink to="/projects" className="nav-link ms-2">Projects</NavLink>
-                <NavLink to="/contact" className="nav-link ms-2">Contact</NavLink>
-                {/* <NavLink to="/front-page" className="nav-link ms-2">FrontPage</NavLink> */}
+                <NavLink to="/" className="nav-link ms-2 nav-label">Home</NavLink>
+                <NavLink to="/projects" className="nav-link ms-2 nav-label">Projects</NavLink>
+                <NavLink to="/contact" className="nav-link ms-2 nav-label">Contact</NavLink>
+                <NavLink to="/joke" className="nav-link ms-2 nav-label" style={{color: "black"}}>Home</NavLink>
             </Nav>
         </Navbar.Collapse>
     </Navbar>

@@ -62,9 +62,8 @@ function HorizontalScroll({ title, rotate }) {
     const isMobile = /Mobi/.test(navigator.userAgent);
 
     const images90 = certs90.map((obj, i) => {
-        console.log("trying to load 90 image")
         return (
-            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i}>
+            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag">
                 <img src={obj.img} className="scroll-card-90" />
             </a>
         )
@@ -72,7 +71,7 @@ function HorizontalScroll({ title, rotate }) {
 
     const images = certs.map((obj, i) => {
         return (
-            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i}>
+            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag">
                 <img src={obj.img} className="scroll-card" />
             </a>
         )

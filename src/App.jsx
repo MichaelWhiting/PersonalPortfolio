@@ -1,5 +1,5 @@
 import { motion, useScroll } from 'framer-motion';
-import { Outlet } from 'react-router-dom'
+import { Outlet, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 
@@ -13,13 +13,15 @@ import BackgroundVideo from "./videos/background.mp4";
 
 function App() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
   const { scrollYProgress } = useScroll()
 
   useEffect(() => {
     document.body.style.backgroundColor = "#00C8A0"; // 1c1c1c
+    navigate("/joke");
   }, []);
-
-
+  
   useEffect(() => {
     const unsubscribe = scrollYProgress.on("change", (progress) => {
       if (!Number.isNaN(progress)) {
