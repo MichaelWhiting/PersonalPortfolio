@@ -75,18 +75,18 @@ function FrontPage() {
                 }
             </ScrollPage>
 
-            <ScrollPage>
-                {isMobile &&
-                    <div className="animator-certs-mobile">
-                        <HorizontalScroll title="Certifications" rotate={true} />
-                    </div>
-                }
-                {!isMobile &&
+            {isMobile &&
+                <div className="animator-certs-mobile">
+                    <HorizontalScroll title="Certifications" rotate={true} />
+                </div>
+            }
+            {!isMobile &&
+                <ScrollPage>
                     <Animator animation={sidewaysAnim} className="animator-certs">
                         <HorizontalScroll title="Certifications" rotate={true} />
                     </Animator>
-                }
-            </ScrollPage>
+                </ScrollPage>
+            }
 
             <ScrollPage>
                 {(scrollY < 0.97 && scrollY > 0.79) &&
