@@ -30,6 +30,8 @@ function HorizontalScroll({ title, rotate }) {
     const { scrollYProgress } = useScroll({ target: targetRef });
     const x = useTransform(scrollYProgress, [0, 1], rotate ? ["35%", "-28%"] : ["1%", "1%"]); // ["28%", "-29%"]
 
+    const isMobile = /Mobi/.test(navigator.userAgent);
+
     useEffect(() => {
         console.log("running!")
         const unsubscribeX = x.on("change", (value) => {
@@ -59,8 +61,6 @@ function HorizontalScroll({ title, rotate }) {
         { img: MTechRecommend, pdf: MTechRecommendPDF }
     ];
 
-    const isMobile = /Mobi/.test(navigator.userAgent);
-
     const images90 = certs90.map((obj, i) => {
         return (
             <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag">
@@ -84,8 +84,10 @@ function HorizontalScroll({ title, rotate }) {
             <div className="cert-div">
                 {isMobile &&
                     <>
-                        {images90}
-                        {images}
+                        <div className="mobile-imgs">
+                            {images90}
+                            {images}
+                        </div>
                     </>
                 }
                 {!isMobile &&

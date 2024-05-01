@@ -60,6 +60,13 @@
     height: auto;
 }
 
+.mobile-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 700px) {
     .relative {
         position: relative;
