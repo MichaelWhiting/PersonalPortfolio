@@ -54,7 +54,7 @@ function FrontPage() {
     })
 
     return (
-        <div>
+        <div style={{height: "auto"}}>
             <ScrollContainer>
                 <ScrollPage>
                     <Animator animation={anim} className="animator-div">

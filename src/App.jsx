@@ -16,6 +16,7 @@ function App() {
   const navigate = useNavigate();
 
   const { scrollYProgress } = useScroll()
+  const isMobile = /Mobi/.test(navigator.userAgent);
 
   useEffect(() => {
     document.body.style.backgroundColor = "#00C8A0"; // 1c1c1c
@@ -46,7 +47,7 @@ function App() {
 
   return (
     <>
-      <motion.div className="my-progress-bar" style={{ scaleX: scrollYProgress }} />
+      <motion.div className={isMobile ? "my-progress-bar" : "my-progress-bar-mobile"} style={{ scaleX: scrollYProgress }} />
       <div className='container-div'>
         <video autoPlay loop muted playsInline className="bg-video">
           <source src={BackgroundVideo} type="video/mp4" />
