@@ -63,7 +63,7 @@ function HorizontalScroll({ title, rotate }) {
 
     const images90 = certs90.map((obj, i) => {
         return (
-            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag">
+            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag fade-in">
                 <img src={obj.img} className="scroll-card-90" />
             </a>
         )
@@ -71,7 +71,7 @@ function HorizontalScroll({ title, rotate }) {
 
     const images = certs.map((obj, i) => {
         return (
-            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag">
+            <a href={obj.pdf} target="_blank" rel="noopener noreferrer" key={i} className="a-tag fade-in">
                 <img src={obj.img} className="scroll-card" />
             </a>
         )
