@@ -77,7 +77,7 @@ function FrontPage() {
 
             <ScrollPage>
                 {isMobile &&
-                    <Animator animation={anim} className="animator-certs-mobile">
+                    <Animator className="animator-certs-mobile"> {/* animation={anim} */ }
                         <HorizontalScroll title="Certifications" rotate={true} />
                     </Animator>
                 }
