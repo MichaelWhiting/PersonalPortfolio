@@ -107,6 +107,7 @@ function FrontPage() {
             </ScrollContainer >
             {isMobile &&
                 <div className="animator-certs-mobile">
+                    helloooo
                     <HorizontalScroll title="Certifications" rotate={true} />
                 </div>
             }
