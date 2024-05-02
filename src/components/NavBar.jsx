@@ -13,9 +13,9 @@ function NavBar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="ms-2 mt-2"/>
         <Navbar.Collapse className="ms-1">
             <Nav className="ms-auto me-3 my-3">
-                <NavLink to="/" className="nav-link ms-2 nav-label">Home</NavLink>
-                <NavLink to="/projects" className="nav-link ms-2 nav-label">Projects</NavLink>
-                <NavLink to="/contact" className="nav-link ms-2 nav-label">Contact</NavLink>
+                <NavLink to="/" className="nav-link ms-2 nav-label" style={{opacity: 0}}>Home</NavLink>
+                <NavLink to="/projects" className="nav-link ms-2 nav-label" style={{opacity: 0}}>Projects</NavLink>
+                <NavLink to="/contact" className="nav-link ms-2 nav-label" style={{opacity: 0}}>Contact</NavLink>
                 <NavLink to="/joke" className="nav-link ms-2 nav-label" style={{color: "black"}}>Home</NavLink>
             </Nav>
         </Navbar.Collapse>

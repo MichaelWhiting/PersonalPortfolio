@@ -55,7 +55,6 @@ function FrontPage() {
 
     return (
         <div>
-            <h6>hi chip</h6>
             <ScrollContainer>
                 <ScrollPage>
                     <Animator animation={anim} className="animator-div">
