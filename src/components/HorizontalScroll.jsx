@@ -81,14 +81,14 @@ function HorizontalScroll({ title, rotate }) {
         <section ref={targetRef} className={rotate ? "relative90" : "relative"}>
             {/* {showTitle && <h3 className="title">{title}</h3>} */}
             <br />
-            <div style={{background: "blue"}}>
+            <div>
                 {isMobile &&
                     <>
                         <div className="mobile-imgs">
-                            <div style={{background: "green"}}>
+                            <div>
                                 {images90}  
                             </div>
-                            <div style={{background: "yellow"}}>
+                            <div>
                                 {images}
                             </div>
                         </div>
