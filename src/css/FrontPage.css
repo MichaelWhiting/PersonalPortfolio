@@ -65,6 +65,7 @@
     font-weight: 400;
     top: 65px;
     text-align: center;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .arrow-icon:first-child {

@@ -74,7 +74,7 @@ function FrontPage() {
                     {/* <div style={{height: "0px", margin: "0px"}}></div> */}
                 </ScrollPage>
 
-                {!isMobile &&
+                { !isMobile &&
                     <>
                         <ScrollPage>
                             {(scrollY < 0.7 && scrollY > 0.38) &&
@@ -92,7 +92,7 @@ function FrontPage() {
                  <ScrollPage style={{height: "200px"}}>
                     {/* <div style={{height: "0px", margin: "0px"}}></div> */}
                 </ScrollPage>
-                {!isMobile &&
+                { !isMobile &&
                     <>
                         <ScrollPage>
                             {(scrollY < 0.88 && scrollY > 0.70) &&
@@ -108,7 +108,7 @@ function FrontPage() {
                     </>
                 }
             </ScrollContainer >
-            {isMobile &&
+            { isMobile &&
                 <div className="animator-certs-mobile">
                     <HorizontalScroll title="Certifications" rotate={true} />
                 </div>
