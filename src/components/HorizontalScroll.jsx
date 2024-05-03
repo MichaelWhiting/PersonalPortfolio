@@ -86,8 +86,8 @@ function HorizontalScroll({ title, rotate }) {
                     <>
                         <div className="mobile-imgs">
                             { rotate ? 
-                                {images90} :
-                                {images} 
+                                <div>{images90}</div> :
+                                <div>{images}</div>
                             }
                         </div>
                     </>
