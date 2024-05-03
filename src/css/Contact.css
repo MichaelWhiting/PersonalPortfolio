@@ -119,6 +119,9 @@ form {
     font-size: 20px;
     font-weight: 300;
     opacity: 0;
+    width: 90%;
+    margin: auto;
+    text-align: center;
 }
 
 @media (max-width: 450px) {
