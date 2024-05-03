@@ -82,15 +82,19 @@ function HorizontalScroll({ title, rotate }) {
             {/* {showTitle && <h3 className="title">{title}</h3>} */}
             <br />
             <div style={{background: "blue"}}>
-                {isMobile &&
+                {!isMobile &&
                     <>
-                        <div className="mobile-imgs" style={{background: "red"}}>
-                            {images90}
-                            {images}
+                        <div className="mobile-imgs">
+                            <div style={{background: "green"}}>
+                                {images90}  
+                            </div>
+                            <div style={{background: "yellow"}}>
+                                {images}
+                            </div>
                         </div>
                     </>
                 }
-                {!isMobile &&
+                {isMobile &&
                     <motion.div style={{ x }} className="cert-div">
                         {rotate &&
                             <>
