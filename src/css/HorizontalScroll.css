@@ -81,6 +81,7 @@
         height: 390px;
         margin-left: 0px;
         margin-right: 0px;
+        
     }
     
     .scroll-card-90 {
@@ -92,7 +93,12 @@
         z-index: 4;
         opacity: 1;
     }
-    
+
+    .a-tag {
+        width: 100%
+        margin: auto
+    }
+
     .cert-div {
         /* position: -webkit-sticky; /* Safari */
         /* position: sticky;
