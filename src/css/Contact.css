@@ -124,11 +124,15 @@ form {
     text-align: center;
 }
 
+.loading-icon {
+    margin: auto;
+}
+
 @media (max-width: 450px) {
     .result-label {
         width: 100%;
     }
-    
+
     .contact-item {
         font-size: 18px;
         margin-bottom: 7px;

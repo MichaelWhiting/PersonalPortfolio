@@ -77,7 +77,7 @@ function Contact() {
                     }
 
                     { loading && 
-                        <Spinner style={{marginLeft: "20px"}} className="fade-in"/>
+                        <Spinner style={{marginLeft: "20px"}} className="fade-in loading-icon"/>
                     }
 
                     <label 
