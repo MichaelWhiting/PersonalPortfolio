@@ -109,12 +109,12 @@ function FrontPage() {
                 }
             </ScrollContainer >
             { isMobile &&
-                <div className="animator-certs-mobile" style={{background: "red"}}>
+                <div className="animator-certs-mobile">
                     <HorizontalScroll title="Certifications" rotate={true} />
                 </div>
             }
             {isMobile &&
-                <div className="animator-certs-mobile" style={{background: "blue"}}>
+                <div className="animator-certs-mobile">
                     <HorizontalScroll title="Resume & Recommendations" rotate={false} />
                 </div>
             }
